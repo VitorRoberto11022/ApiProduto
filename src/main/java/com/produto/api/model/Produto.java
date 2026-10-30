@@ -1,6 +1,15 @@
 package com.produto.api.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "tb_produto")
 public class Produto {
+
+    @Id
     private Long id;
     private String nome;
     private String categoria;
